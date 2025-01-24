@@ -1,10 +1,10 @@
-- name: Configure mysql server
-  hosts: mysql
-  become: yes
-  # vars:
-  #   mysql_root_password: ExpenseApp@1
+# - name: Configure mysql server
+#   hosts: mysql
+#   become: yes
+#   # vars:
+# #   #   mysql_root_password: ExpenseApp@1
 
-  tasks:
+#   tasks:
   - name: Install mysql binaries #Installing binaries using loop
     ansible.builtin.pip:
       name: "{{ item }}"
